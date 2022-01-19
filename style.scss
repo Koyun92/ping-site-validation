@@ -1,0 +1,156 @@
+@import '_variables';
+@import '_mixins';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 2rem;
+    @include flex(column, center, center);
+}
+
+.subscription-page {
+    @include flex(column, center, center);
+    padding: 2rem 3rem;
+    margin: 3rem 0 0;
+    max-width: 900px;
+
+    &__title {
+        font-size: 1.2em;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 3rem;
+        color: $Gray;
+
+        span {
+            font-weight: 700;
+            color: $Very-Dark-Blue;
+        }
+    }
+
+    &__text {
+        font-size: 0.7em;
+        margin: 2.5rem 0;
+        text-align: center;
+
+    }
+
+    &__error {
+        font-style: italic;
+        color: $Light-Red;
+        font-size: 1.2rem;
+        visibility: hidden;
+        margin-bottom: 5rem;
+        margin-left: 2rem;
+
+        &.visible {
+            visibility: visible;
+        }
+    }
+
+    &__form {
+        @include flex(column, center, center);
+
+    }
+
+
+    &__input {
+        width: 100%;
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+        border: none;
+        border-radius: 30px;
+
+        &--mail {
+            border: 1px solid $Pale-Blue;
+            color: $Pale-Blue;
+
+            &.active {
+                border: 1px solid $Light-Red;
+            }
+        }
+
+        &--submit {
+            background-color: $Blue;
+            color: #fff;
+            cursor: pointer;
+            border: 1px solid $Blue;
+            box-shadow: -4px 7px 18px -1px $Blue;
+            font-weight: 600;
+            transition: .3s;
+
+            &:hover {
+                filter: brightness(136%);
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.footer {
+    &__box {
+        @include flex(row, center, center);
+        padding: 2rem;
+        margin-top: 6rem;
+    }
+
+    &__icon {
+        @include flex(row, center, center);
+        color: $Blue;
+        height: 100%;
+        margin: 0 1rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        border: 1px solid $Pale-Blue;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            color: #fff;
+            background-color: $Blue;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        font-size: .6em;
+    }
+}
+
+@media(min-width:550px) {
+    .subscription-page {
+        &__form {
+            @include flex(row, center, space-between);
+            flex-wrap: wrap;
+        }
+
+        &__input {
+            &--mail {
+                flex-basis: 60%;
+            }
+
+            &--submit {
+                flex-basis: 30%;
+            }
+        }
+
+
+
+
+    }
+}

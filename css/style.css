@@ -1,0 +1,219 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscription-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 3rem;
+  margin: 3rem 0 0;
+  max-width: 900px;
+}
+
+.subscription-page__title {
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 3rem;
+  color: #969696;
+}
+
+.subscription-page__title span {
+  font-weight: 700;
+  color: #151f29;
+}
+
+.subscription-page__text {
+  font-size: 0.7em;
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+.subscription-page__error {
+  font-style: italic;
+  color: #ff5263;
+  font-size: 1.2rem;
+  visibility: hidden;
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+}
+
+.subscription-page__error.visible {
+  visibility: visible;
+}
+
+.subscription-page__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscription-page__input {
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 30px;
+}
+
+.subscription-page__input--mail {
+  border: 1px solid #c2d3ff;
+  color: #c2d3ff;
+}
+
+.subscription-page__input--mail.active {
+  border: 1px solid #ff5263;
+}
+
+.subscription-page__input--submit {
+  background-color: #4f7df3;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #4f7df3;
+  -webkit-box-shadow: -4px 7px 18px -1px #4f7df3;
+          box-shadow: -4px 7px 18px -1px #4f7df3;
+  font-weight: 600;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.subscription-page__input--submit:hover {
+  -webkit-filter: brightness(136%);
+          filter: brightness(136%);
+}
+
+.subscription-page__img {
+  width: 100%;
+}
+
+.footer__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+  margin-top: 6rem;
+}
+
+.footer__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #4f7df3;
+  height: 100%;
+  margin: 0 1rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1px solid #c2d3ff;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer__icon:hover {
+  color: #fff;
+  background-color: #4f7df3;
+}
+
+.footer__text {
+  text-align: center;
+  font-size: .6em;
+}
+
+@media (min-width: 550px) {
+  .subscription-page__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .subscription-page__input--mail {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+  .subscription-page__input--submit {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
