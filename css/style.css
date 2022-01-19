@@ -190,6 +190,9 @@ body {
 }
 
 @media (min-width: 550px) {
+  .subscription-page__title {
+    font-size: 2em;
+  }
   .subscription-page__form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -206,6 +209,9 @@ body {
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .subscription-page__input {
+    padding: 1.5rem 2.5rem;
   }
   .subscription-page__input--mail {
     -ms-flex-preferred-size: 60%;

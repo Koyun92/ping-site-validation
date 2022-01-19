@@ -134,12 +134,19 @@ body {
 
 @media(min-width:550px) {
     .subscription-page {
+        &__title {
+            font-size: 2em;
+        }
+
+
         &__form {
             @include flex(row, center, space-between);
             flex-wrap: wrap;
         }
 
         &__input {
+            padding: 1.5rem 2.5rem;
+
             &--mail {
                 flex-basis: 60%;
             }
